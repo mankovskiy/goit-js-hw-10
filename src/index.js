@@ -39,14 +39,14 @@ function onInput(e) {
 
 function countryListMarkup(country) {
   return `<li class="country-item"  >
-          <img src="${country.flags.svg}" width = '30' alt="" />
+          <img class="img-item" src="${country.flags.svg}" alt="" />
           <h2 class="title-item">${country.name.official}</h2>
           </li>`;
 }
 
 function countryInfoMarkup(country) {
   return `<h1 class="title">${country.name.official}</h1>
-            <img src="${country.flags.svg}" width = '30' alt="" />
+            <img class="img-info" src="${country.flags.svg}"  alt="" />
               <ul class="list-info">
                 <li class="item-info">Capital: ${country.capital}</li>
                 <li class="item-info">Languages: ${Object.values(
